@@ -1,7 +1,7 @@
 var _ = require('./example.js');
 
-_.currencyApi().then(function (res) {
+_.currencyApi().then((res) => {
   console.log(res);
-}).catch(function (err) {
+}).catch((err) => {
   console.log(err);
 });

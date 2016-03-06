@@ -7,13 +7,13 @@ module.exports = {
   },
 
   currencyApi: function () {
-    var promise = new Promise(function(resolve, reject) {
+    var promise = new Promise((resolve, reject) => {
       var options = {
         method: 'GET',
         url: 'http://api.fixer.io/latest'
       };
 
-      request(options, function (error, response, body) {
+      request(options, (error, response, body) => {
         if (error) {
           reject(error);
         } else {
